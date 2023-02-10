@@ -8,6 +8,7 @@ public class Customers extends Services {
 
 
 
+
     public Customers(Boolean brake, Boolean tyre, Boolean lights, Boolean accelerator, Boolean services, Boolean warranty, int branch_phone, Boolean mechanics, int time, String name, String address, int phone_no) {
         super(brake, tyre, lights, accelerator, services, warranty);
         this.name = name;
@@ -43,6 +44,24 @@ public class Customers extends Services {
     }
 
 
+    public void Customerinfo(){
+        System.out.println("Customer_name:"+this.name);
+        System.out.println("Customer_address:"+this.address);
+        System.out.println("Customer_phone:"+this.phone_no);
+        System.out.println("Services_needed:"+this.services);
+        System.out.println("Warranty: "+this.warranty);
+        System.out.println("Time:" +this.time);
+        System.out.println("Mechanics: "+this.mechanics);
+    }
+
+
+
+
+
+
 
 
 }
+
+
+

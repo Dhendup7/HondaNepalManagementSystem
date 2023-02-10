@@ -23,9 +23,13 @@ Showroom sh1=new Showroom("Mk","Black",20000,true,false);
         Parts p1=new Parts(true,false,true,true);
 
 
-        Department d1=new Department("Bouddha","Jack");
-        Branch b1=new Branch("Pokhara","Shreejesh");
+        Department d1=new Department("Boudha","dhendup",true,false,true,1,"Mechanical");
 
+        Branch b1=new Branch("Pokhara","Dhendup",true,false,true);
+
+        b1.Branchinfo();
+        c1.Customerinfo();
+        d1.DepartmentInfo();
 
 
     }

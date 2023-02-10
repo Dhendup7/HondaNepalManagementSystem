@@ -1,28 +1,63 @@
 package Headbranch;
 
+import javax.imageio.plugins.tiff.ExifParentTIFFTagSet;
+import javax.sound.midi.Soundbank;
+
 public class Branch {
 
     String branch_location;
     String branch_head;
 
-    public Branch(String branch_location, String branch_head) {
+    Boolean Parts;
+    Boolean Services;
+    Boolean Showroom;
+
+    public Branch(Boolean parts, Boolean services, Boolean showroom) {
+        Parts = parts;
+        Services = services;
+        Showroom = showroom;
+    }
+
+    public Boolean getParts() {
+        return Parts;
+    }
+
+    public void setParts(Boolean parts) {
+        Parts = parts;
+    }
+
+    public Boolean getServices() {
+        return Services;
+    }
+
+    public void setServices(Boolean services) {
+        Services = services;
+    }
+
+    public Boolean getShowroom() {
+        return Showroom;
+    }
+
+    public void setShowroom(Boolean showroom) {
+        Showroom = showroom;
+    }
+
+    public Branch(String branch_location, String branch_head, boolean b, boolean b1, boolean b2) {
         this.branch_location = branch_location;
         this.branch_head = branch_head;
     }
 
-    public String getBranch_location() {
-        return branch_location;
+
+    public void Branchinfo(){
+        System.out.println("*********************Branch details *************************");
+        System.out.println("Branch head:"+this.branch_head);
+        System.out.println("Branch locations:"+this.branch_location);
+        System.out.println("Parts available:"+this.Parts);
+        System.out.println("Services available:"+this.Services);
+        System.out.println("Showroom available:"+this.Showroom);
     }
 
-    public void setBranch_location(String branch_location) {
-        this.branch_location = branch_location;
-    }
 
-    public String getBranch_head() {
-        return branch_head;
-    }
 
-    public void setBranch_head(String branch_head) {
-        this.branch_head = branch_head;
-    }
+
 }

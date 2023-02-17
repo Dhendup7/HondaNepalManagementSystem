@@ -1,8 +1,5 @@
 package Headbranch;
 
-import javax.imageio.plugins.tiff.ExifParentTIFFTagSet;
-import javax.sound.midi.Soundbank;
-
 public class Branch {
 
     String branch_location;

@@ -6,6 +6,7 @@ public class Customers extends Services {
     String address;
     int phone_no;
 
+String Customers;
 
 
 
@@ -45,6 +46,10 @@ public class Customers extends Services {
 
 
     public void Customerinfo(){
+
+
+
+        System.out.println("***********Customers info***********");
         System.out.println("Customer_name:"+this.name);
         System.out.println("Customer_address:"+this.address);
         System.out.println("Customer_phone:"+this.phone_no);
@@ -52,6 +57,7 @@ public class Customers extends Services {
         System.out.println("Warranty: "+this.warranty);
         System.out.println("Time:" +this.time);
         System.out.println("Mechanics: "+this.mechanics);
+
     }
 
 

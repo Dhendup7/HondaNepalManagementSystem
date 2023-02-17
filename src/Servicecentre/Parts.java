@@ -1,6 +1,6 @@
 package Servicecentre;
 
-public class Parts {
+public class Parts  {
     Boolean brake;
     Boolean Tyre;
     Boolean Lights;
@@ -43,6 +43,16 @@ public class Parts {
 
     public void setAccelerator(Boolean accelerator) {
         Accelerator = accelerator;
+    }
+
+
+
+    public void parts(){
+        System.out.println("Acccelrator:"+this.Accelerator);
+        System.out.println("Brake:"+this.brake);
+        System.out.println("Lights:"+this.Lights);
+        System.out.println("Tyre:"+this.Tyre);
+
     }
 
 }

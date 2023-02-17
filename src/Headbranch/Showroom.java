@@ -54,4 +54,12 @@ public class Showroom {
     public void setManual_Diesel(Boolean manual_Diesel) {
         Manual_Diesel = manual_Diesel;
     }
+
+    public void Showpiece(){
+        System.out.println("Car_model:"+this.car_model);
+        System.out.println("Car_color:"+this.car_color);
+        System.out.println("Car_price:"+this.car_price);
+        System.out.println("Electric/Automatic:"+this.Electric_Automatic);
+        System.out.println("Diesel/Manual:"+this.Manual_Diesel);
+    }
 }
